@@ -1,2 +1,2 @@
 # dream-bean
-A responsive coffee shop website using HTML, CSS, Javascript, and GSAP animations.
+A responsive coffee shop website using HTML, CSS, JavaScript, and GSAP animations.
