@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dream Bean café website">
+  <title>Dream Bean</title>
+  <link rel="stylesheet" rel="preload" as="style" media="all" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" rel="preload" as="style" media="all"
+    href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap">
+  <link rel="stylesheet" rel="preload" as="style" media="all"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <a href="/" class="navbar-logo">DREAM BEAN</a>
+    <div class="navbar-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <div class="navbar-menu">
+      <a href="/" class="navbar-link">Home</a>
+      <a href="/menu.html" class="navbar-link">Menu</a>
+      <a href="/contact.html" class="navbar-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <div class="contact">
+    <p class="contact-topline">Contact</p>
+    <h1 class="contact-heading">Get in Touch</h1>
+    <div class="contact-wrapper">
+      <div class="contact-card animate-card">
+        <form id="contact-form" class="form-horizontal" role="form">
+          <div class="wrapper">
+            <div class="contact-container">
+              <form class="contact-form">
+                <label for="name">Name</label>
+                <input class="contact-form-input" type="text" name="name" id="name">
+                <label for="email">Email</label>
+                <input class="contact-form-input" type="text" name="email" id="email">
+                <label for="message">Message</label>
+                <textarea class="contact-form-textarea" type="text" name="message" id="message"></textarea>
+                <a href="/" class="button">Send</a>
+              </form>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="contact-card animate-card">
+        <div class="direct-contact-container">
+          <ul class="contact-list">
+            <li class="list-item">
+              <img src="./images/phone-solid.svg" alt="phone" class="contact-img animate-img">
+              <span class="contact-text phone">(012) 345-6789</span>
+              </i>
+            </li>
+            <li class="list-item">
+              <img src="./images/envelope-solid.svg" alt="envelope" class="contact-img animate-img">
+              <span class="contact-text gmail">
+                <a href="mailto:#">dreambean@gmail.com</a>
+              </span>
+              </i>
+            </li>
+            <li class="list-item">
+              <img src="./images/map-marker-alt-solid.svg" alt="map" class="contact-img animate-img">
+              <span class="contact-text place">Los Angeles, CA</span>
+              </i>
+            </li>
+          </ul>
+          <ul class="social-media-list">
+            <li onclick="location.href='/';">
+              <img src="./images/twitter-brands.svg" alt="twitter" class="social-link animate-card">
+            </li>
+            <li onclick="location.href='/';">
+              <img src="./images/facebook-brands.svg" alt="facebook" class="social-link animate-card">
+            </li>
+            <li onclick="location.href='/';">
+              <img src="./images/instagram-brands.svg" alt="instagram" class="social-link animate-card">
+            </li>
+            <li onclick="location.href='/';">
+              <img src="./images/youtube-brands.svg" alt="youtube" class="social-link animate-card">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h1>Quick Links</h1>
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">News and Updates</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h1>Information</h1>
+            <ul class="list-unstyled">
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h1>Support</h1>
+            <ul class="list-unstyled">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h1>Follow Us</h1>
+            <ul class="list-unstyled">
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 copy">
+            <p class="text-center">
+              Dream Bean &copy;
+              <span id="copyright-date">
+                <script>document.getElementById('copyright-date').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+              </span>All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+
+</html>
