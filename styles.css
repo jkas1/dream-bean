@@ -224,6 +224,7 @@
   .hero-content {
     padding: 1rem;
     position: relative;
+    margin-top: 0;
   }
   .hero-content h1 {
     margin: 4rem 0 0.5rem 0;
